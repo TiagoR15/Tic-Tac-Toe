@@ -6,6 +6,12 @@ var player1 = {
   }
 }
 
+var player2 = {
+  move(linha, coluna){
+    jogo[linha][coluna] = 'O';
+  }
+}
+
 function render(){
   console.log(jogo);
 }
@@ -14,28 +20,25 @@ render();
 
 console.log('Primeira jogada:');
 player1.move(0,0);
-jogo[2][4] = 'O';
+player2.move(2,4);
 
 render();
 
 console.log('Segunda jogada:');
 player1.move(2,0);
-//jogo[2][0] = 'X';
-jogo[1][0] = 'O';
+player2.move(1,0);
 
 render();
 
 console.log('Terceira jogada:');
 player1.move(0,4);
-//jogo[0][4] = 'X';
-jogo[0][2] = 'O';
+player2.move(0,2);
 
 render();
 
 console.log('Quarta jogada:');
 player1.move(1,2);
-//jogo[1][2] = 'X';
-jogo[1][4] = 'O';
+player2.move(1,4);
 
 render();
 
