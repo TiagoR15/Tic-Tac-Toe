@@ -9,36 +9,40 @@
       <b>Galo!</b>
       <table>
         <tr>
-          <td>1</td>
-          <td>2</th>
-          <td>3</th>
+          <td onclick="move(0)" id="elemento">1</td>
+          <td onclick="move(1)" id="elemento">2</th>
+          <td onclick="move(2)" id="elemento">3</th>
         </tr>
         <tr>
-          <td>4</td>
-          <td>5</td>
-          <td>6</td>
+          <td onclick="move(3)">4</td>
+          <td onclick="move(4)">5</td>
+          <td onclick="move(5)">6</td>
         </tr>
         <tr>
-          <td>7</td>
-          <td>8</td>
-          <td>9</td>
+          <td onclick="move(6)">7</td>
+          <td onclick="move(7)">8</td>
+          <td onclick="move(8)">9</td>
         </tr>
       </table>
 
-      <div id="controls">
-        <button onclick="move()">1</button>
-        <button onclick="move()">2</button>
-        <button onclick="move()">3</button>
-        <button onclick="move()">4</button>
-        <button onclick="move()">5</button>
-        <button onclick="move()">6</button>
-        <button onclick="move()">7</button>
-        <button onclick="move()">8</button>
-        <button onclick="move()">9</button>
-      </div>
-
       <script>
+        function move(elemento){
+          tdElement = document.querySelectorAll("td");
 
+          var option = elemento;
+
+          switch(option) {
+            case 0: tdElement[0].textContent = 'X'; break;
+            case 1: tdElement[1].textContent = 'X'; break;
+            case 2: tdElement[2].textContent = 'X'; break;
+            case 3: tdElement[3].textContent = 'X'; break;
+            case 4: tdElement[4].textContent = 'X'; break;
+            case 5: tdElement[5].textContent = 'X'; break;
+            case 6: tdElement[6].textContent = 'X'; break;
+            case 7: tdElement[7].textContent = 'X'; break;
+            case 8: tdElement[8].textContent = 'X'; break;
+          }
+        }
       </script>
 
     </body>
