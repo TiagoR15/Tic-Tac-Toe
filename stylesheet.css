@@ -3,3 +3,17 @@ table, td {
   border-collapse: collapse;
   text-align: center;
 }
+
+table {
+  width: 10%;
+}
+
+td {
+  height: 10px;
+}
+
+button {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
