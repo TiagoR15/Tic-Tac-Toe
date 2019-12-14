@@ -9,9 +9,9 @@
       <b>Galo!</b>
       <table>
         <tr>
-          <td onclick="move(0)" id="elemento">1</td>
-          <td onclick="move(1)" id="elemento">2</th>
-          <td onclick="move(2)" id="elemento">3</th>
+          <td onclick="move(0)">1</td>
+          <td onclick="move(1)">2</th>
+          <td onclick="move(2)">3</th>
         </tr>
         <tr>
           <td onclick="move(3)">4</td>
@@ -37,9 +37,11 @@
           if(player === 1){
             player = 2;
             playerIcon = 'O';
+            alert("Current Player Player2");
           } else {
             player = 1;
             playerIcon = 'X';
+            alert("Current Player Player1");
           }
         }
 
@@ -47,7 +49,7 @@
           tdElement = document.querySelectorAll("td");
 
           var option = elemento;
-          
+
           switch(option) {
             case 0: tdElement[0].textContent = playerIcon; break;
             case 1: tdElement[1].textContent = playerIcon; break;
@@ -60,9 +62,6 @@
             case 8: tdElement[8].textContent = playerIcon; break;
           }
         }
-
-
-
 
       </script>
 
