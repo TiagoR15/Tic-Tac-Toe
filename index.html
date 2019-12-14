@@ -9,19 +9,19 @@
       <b>Galo!</b>
       <table>
         <tr>
-          <td onclick="move(0)">1</td>
-          <td onclick="move(1)">2</th>
-          <td onclick="move(2)">3</th>
+          <td onclick="move(0)">0</td>
+          <td onclick="move(1)">1</th>
+          <td onclick="move(2)">2</th>
         </tr>
         <tr>
-          <td onclick="move(3)">4</td>
-          <td onclick="move(4)">5</td>
-          <td onclick="move(5)">6</td>
+          <td onclick="move(3)">3</td>
+          <td onclick="move(4)">4</td>
+          <td onclick="move(5)">5</td>
         </tr>
         <tr>
-          <td onclick="move(6)">7</td>
-          <td onclick="move(7)">8</td>
-          <td onclick="move(8)">9</td>
+          <td onclick="move(6)">6</td>
+          <td onclick="move(7)">7</td>
+          <td onclick="move(8)">8</td>
         </tr>
       </table>
 
@@ -51,18 +51,55 @@
           var option = elemento;
 
           switch(option) {
-            case 0: tdElement[0].textContent = playerIcon; break;
-            case 1: tdElement[1].textContent = playerIcon; break;
-            case 2: tdElement[2].textContent = playerIcon; break;
-            case 3: tdElement[3].textContent = playerIcon; break;
-            case 4: tdElement[4].textContent = playerIcon; break;
-            case 5: tdElement[5].textContent = playerIcon; break;
-            case 6: tdElement[6].textContent = playerIcon; break;
-            case 7: tdElement[7].textContent = playerIcon; break;
-            case 8: tdElement[8].textContent = playerIcon; break;
+            case 0: tdElement[0].textContent = playerIcon; evaluateGame(); break;
+            case 1: tdElement[1].textContent = playerIcon; evaluateGame(); break;
+            case 2: tdElement[2].textContent = playerIcon; evaluateGame(); break;
+            case 3: tdElement[3].textContent = playerIcon; evaluateGame(); break;
+            case 4: tdElement[4].textContent = playerIcon; evaluateGame(); break;
+            case 5: tdElement[5].textContent = playerIcon; evaluateGame(); break;
+            case 6: tdElement[6].textContent = playerIcon; evaluateGame(); break;
+            case 7: tdElement[7].textContent = playerIcon; evaluateGame(); break;
+            case 8: tdElement[8].textContent = playerIcon; evaluateGame(); break;
           }
         }
 
+        function evaluateGame(){
+          tdElement = document.querySelectorAll("td");
+
+          if(tdElement[0].textContent === tdElement[1].textContent && 
+            tdElement[1].textContent === tdElement[2].textContent){
+            alert("Jogo Terminou!");
+          }
+          if(tdElement[3].textContent === tdElement[4].textContent && 
+            tdElement[4].textContent === tdElement[5].textContent){
+              alert("Jogo Terminou!");
+          }
+          if(tdElement[6].textContent === tdElement[7].textContent && 
+            tdElement[7].textContent === tdElement[8].textContent){
+            alert("Jogo Terminou!");
+          }
+          if(tdElement[0].textContent === tdElement[3].textContent && 
+            tdElement[3].textContent === tdElement[6].textContent){
+            alert("Jogo Terminou!");
+          }
+          if(tdElement[1].textContent === tdElement[4].textContent && 
+            tdElement[4].textContent === tdElement[7].textContent){
+            alert("Jogo Terminou!");
+          }
+          if(tdElement[2].textContent === tdElement[5].textContent && 
+            tdElement[5].textContent === tdElement[8].textContent){
+            alert("Jogo Terminou!");
+          }
+          if(tdElement[0].textContent === tdElement[4].textContent && 
+            tdElement[4].textContent === tdElement[8].textContent){
+            alert("Jogo Terminou!");
+          }
+          if(tdElement[2].textContent === tdElement[4].textContent && 
+            tdElement[4].textContent === tdElement[6].textContent){
+            alert("Jogo Terminou!");
+          }
+          
+        }
       </script>
 
     </body>
