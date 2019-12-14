@@ -25,24 +25,45 @@
         </tr>
       </table>
 
+      <div id="players">
+        <button id="player1" onclick="switchPlayer()">Switch player</button>
+      </div>
+
       <script>
+        var player = 1;
+        var playerIcon = 'X';
+
+        function switchPlayer(){
+          if(player === 1){
+            player = 2;
+            playerIcon = 'O';
+          } else {
+            player = 1;
+            playerIcon = 'X';
+          }
+        }
+
         function move(elemento){
           tdElement = document.querySelectorAll("td");
 
           var option = elemento;
-
+          
           switch(option) {
-            case 0: tdElement[0].textContent = 'X'; break;
-            case 1: tdElement[1].textContent = 'X'; break;
-            case 2: tdElement[2].textContent = 'X'; break;
-            case 3: tdElement[3].textContent = 'X'; break;
-            case 4: tdElement[4].textContent = 'X'; break;
-            case 5: tdElement[5].textContent = 'X'; break;
-            case 6: tdElement[6].textContent = 'X'; break;
-            case 7: tdElement[7].textContent = 'X'; break;
-            case 8: tdElement[8].textContent = 'X'; break;
+            case 0: tdElement[0].textContent = playerIcon; break;
+            case 1: tdElement[1].textContent = playerIcon; break;
+            case 2: tdElement[2].textContent = playerIcon; break;
+            case 3: tdElement[3].textContent = playerIcon; break;
+            case 4: tdElement[4].textContent = playerIcon; break;
+            case 5: tdElement[5].textContent = playerIcon; break;
+            case 6: tdElement[6].textContent = playerIcon; break;
+            case 7: tdElement[7].textContent = playerIcon; break;
+            case 8: tdElement[8].textContent = playerIcon; break;
           }
         }
+
+
+
+
       </script>
 
     </body>
