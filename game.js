@@ -76,6 +76,8 @@ function move(elemento) {
         switchPlayer();
         break;
       }
+      alert("Cell Locked!")
+      break;
 
     case 4:
       if (!verify(4)) {
@@ -85,7 +87,8 @@ function move(elemento) {
         switchPlayer();
         break;
       }
-
+      alert("Cell Locked!")
+      break;
 
     case 5:
       if (!verify(5)) {
@@ -95,7 +98,8 @@ function move(elemento) {
         switchPlayer();
         break;
       }
-
+      alert("Cell Locked!")
+      break;
 
     case 6:
       if (!verify(6)) {
@@ -105,18 +109,29 @@ function move(elemento) {
         switchPlayer();
         break;
       }
-
-
-    case 7: tdElement[7].textContent = playerIcon;
-      tdElement[7].style.backgroundColor = backgroundColor;
-      evaluateGame();
-      switchPlayer();
+      alert("Cell Locked!")
       break;
 
-    case 8: tdElement[8].textContent = playerIcon;
-      tdElement[8].style.backgroundColor = backgroundColor;
-      evaluateGame();
-      switchPlayer();
+    case 7:
+      if (!verify(7)) {
+        tdElement[7].textContent = playerIcon;
+        tdElement[7].style.backgroundColor = backgroundColor;
+        evaluateGame();
+        switchPlayer();
+        break;
+      }
+      alert("Cell Locked!")
+      break;
+
+    case 8:
+      if (!verify(8)) {
+        tdElement[8].textContent = playerIcon;
+        tdElement[8].style.backgroundColor = backgroundColor;
+        evaluateGame();
+        switchPlayer();
+        break;
+      }
+      alert("Cell Locked!")
       break;
   }
 }
