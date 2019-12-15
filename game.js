@@ -174,6 +174,9 @@ function move(elemento) {
   }
 }
 
+/**
+ * Função que avalia a situação do jogo
+ */
 function evaluateGame() {
   player1winsElement = document.querySelector("p[name=player1Wins]");
   player2winsElement = document.querySelector("p[name=player2Wins]");
