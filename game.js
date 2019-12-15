@@ -8,7 +8,6 @@ var player2Wins = 0;
 var tdElement = document.querySelectorAll("td");
 
 function freeCells(){
-  //let tdElement = document.querySelectorAll("td");
   let freeCells = 0;
 
   for(let i=0; i<tdElement.length; i++){
@@ -21,8 +20,6 @@ function freeCells(){
 }
 
 function verify(cell) {
-  //let tdElement = document.querySelectorAll("td");
-
   if (tdElement[cell].textContent === 'X' || tdElement[cell].textContent === 'O') {
     return true;
   }
@@ -45,7 +42,6 @@ function switchPlayer() {
 }
 
 function move(elemento) {
-  //tdElement = document.querySelectorAll("td");
   var option = elemento;
 
   switch (option) {
@@ -152,7 +148,6 @@ function move(elemento) {
 }
 
 function evaluateGame() {
-  //tdElement = document.querySelectorAll("td");
   player1winsElement = document.querySelector("p[name=player1Wins]");
   player2winsElement = document.querySelector("p[name=player2Wins]");
 
@@ -259,8 +254,6 @@ function evaluateGame() {
 }
 
 function resetGame() {
-  //let table = document.querySelectorAll("td");
-
   for (var i = 0; i < tdElement.length; i++) {
     tdElement[i].textContent = i;
     tdElement[i].style.backgroundColor = "#FFFFFF";
