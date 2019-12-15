@@ -1,3 +1,15 @@
+/**
+ * Variáveis da app
+ * 
+ * player - Player a jogar
+ * playerIcon - Icone do player a jogar
+ * backgroundColor - Cor da célula do player a jogar
+ * player1 - Mensagem com informação de qual jogador jogar
+ * player2 - Mensagem com informação de qual jogador jogar
+ * player1Wins - Número de wins do player 1
+ * player2Wins - Número de wins do player 2
+ * tdElement - tabela de jogo
+ */
 var player = 1;
 var playerIcon = 'X';
 var backgroundColor = "#6495ED";
