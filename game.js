@@ -64,6 +64,10 @@ function switchPlayer() {
   }
 }
 
+/**
+ * Função que realiza a jogada do jogador
+ * @param {*} elemento - célula escolhida pelo jogador para realizar jogada
+ */
 function move(elemento) {
   var option = elemento;
 
