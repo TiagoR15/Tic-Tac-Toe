@@ -283,6 +283,9 @@ function evaluateGame() {
   }
 }
 
+/**
+ * Função que reinicia o jogo
+ */
 function resetGame() {
   for (var i = 0; i < tdElement.length; i++) {
     tdElement[i].textContent = i;
