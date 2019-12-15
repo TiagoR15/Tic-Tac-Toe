@@ -35,6 +35,10 @@ function freeCells(){
   return freeCells;
 }
 
+/**
+ * Função que verifica se uma célula está bloqueada
+ * @param {*} cell - célula a verificar se está bloqueada
+ */
 function verify(cell) {
   if (tdElement[cell].textContent === 'X' || tdElement[cell].textContent === 'O') {
     return true;
