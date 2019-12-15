@@ -46,6 +46,9 @@ function verify(cell) {
   return false;
 }
 
+/**
+ * Função que troca de jogador para jogar
+ */
 function switchPlayer() {
   let playerElement = document.querySelector("p");
   if (player === 1) {
