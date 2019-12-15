@@ -19,6 +19,10 @@ var player1Wins = 0;
 var player2Wins = 0;
 var tdElement = document.querySelectorAll("td");
 
+/**
+ * Função que retorna o número de células livres
+ * return número de células livres
+ */
 function freeCells(){
   let freeCells = 0;
 
