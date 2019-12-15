@@ -5,9 +5,23 @@ var player1 = 'Current Player: Player1';
 var player2 = 'Current Player: Player2';
 var player1Wins = 0;
 var player2Wins = 0;
+var tdElement = document.querySelectorAll("td");
+
+function freeCells(){
+  //let tdElement = document.querySelectorAll("td");
+  let freeCells = 0;
+
+  for(let i=0; i<tdElement.length; i++){
+    if(!verify(i)){
+      freeCells++;
+    }
+  }
+
+  return freeCells;
+}
 
 function verify(cell) {
-  tdElement = document.querySelectorAll("td");
+  //let tdElement = document.querySelectorAll("td");
 
   if (tdElement[cell].textContent === 'X' || tdElement[cell].textContent === 'O') {
     return true;
@@ -31,7 +45,7 @@ function switchPlayer() {
 }
 
 function move(elemento) {
-  tdElement = document.querySelectorAll("td");
+  //tdElement = document.querySelectorAll("td");
   var option = elemento;
 
   switch (option) {
@@ -96,6 +110,7 @@ function move(elemento) {
         tdElement[5].style.backgroundColor = backgroundColor;
         evaluateGame();
         switchPlayer();
+
         break;
       }
       alert("Cell Locked!")
@@ -137,7 +152,7 @@ function move(elemento) {
 }
 
 function evaluateGame() {
-  tdElement = document.querySelectorAll("td");
+  //tdElement = document.querySelectorAll("td");
   player1winsElement = document.querySelector("p[name=player1Wins]");
   player2winsElement = document.querySelector("p[name=player2Wins]");
 
@@ -237,14 +252,17 @@ function evaluateGame() {
       alert("Player2 Wins!");
     }
     resetGame();
+  } else if(freeCells() === 0){
+    resetGame();
+    alert("Game Draw!");
   }
 }
 
 function resetGame() {
-  let table = document.querySelectorAll("td");
+  //let table = document.querySelectorAll("td");
 
-  for (var i = 0; i < table.length; i++) {
-    table[i].textContent = i;
-    table[i].style.backgroundColor = "#FFFFFF";
+  for (var i = 0; i < tdElement.length; i++) {
+    tdElement[i].textContent = i;
+    tdElement[i].style.backgroundColor = "#FFFFFF";
   }
 }
