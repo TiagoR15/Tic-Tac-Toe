@@ -82,64 +82,64 @@ function evaluateGame() {
     } else {
       alert("Player2 Wins!");
     }
-  }
-  if (tdElement[3].textContent === tdElement[4].textContent &&
+    resetGame();
+  } else if (tdElement[3].textContent === tdElement[4].textContent &&
     tdElement[4].textContent === tdElement[5].textContent) {
     if (tdElement[3].textContent === 'X') {
       alert("Player1 Wins!");
     } else {
       alert("Player2 Wins!");
     }
-  }
-  if (tdElement[6].textContent === tdElement[7].textContent &&
+    resetGame();
+  } else if (tdElement[6].textContent === tdElement[7].textContent &&
     tdElement[7].textContent === tdElement[8].textContent) {
     if (tdElement[6].textContent === 'X') {
       alert("Player1 Wins!");
     } else {
       alert("Player2 Wins!");
     }
-  }
-  if (tdElement[0].textContent === tdElement[3].textContent &&
+    resetGame();
+  } else if (tdElement[0].textContent === tdElement[3].textContent &&
     tdElement[3].textContent === tdElement[6].textContent) {
     if (tdElement[0].textContent === 'X') {
       alert("Player1 Wins!");
     } else {
       alert("Player2 Wins!");
     }
-  }
-  if (tdElement[1].textContent === tdElement[4].textContent &&
+    resetGame();
+  } else if (tdElement[1].textContent === tdElement[4].textContent &&
     tdElement[4].textContent === tdElement[7].textContent) {
     if (tdElement[1].textContent === 'X') {
       alert("Player1 Wins!");
     } else {
       alert("Player2 Wins!");
     }
-  }
-  if (tdElement[2].textContent === tdElement[5].textContent &&
+    resetGame();
+  } else if (tdElement[2].textContent === tdElement[5].textContent &&
     tdElement[5].textContent === tdElement[8].textContent) {
     if (tdElement[2].textContent === 'X') {
       alert("Player1 Wins!");
     } else {
       alert("Player2 Wins!");
     }
-  }
-  if (tdElement[0].textContent === tdElement[4].textContent &&
+    resetGame();
+  } else if (tdElement[0].textContent === tdElement[4].textContent &&
     tdElement[4].textContent === tdElement[8].textContent) {
     if (tdElement[0].textContent === 'X') {
       alert("Player1 Wins!");
     } else {
       alert("Player2 Wins!");
     }
-  }
-  if (tdElement[2].textContent === tdElement[4].textContent &&
+    resetGame();
+  } else if (tdElement[2].textContent === tdElement[4].textContent &&
     tdElement[4].textContent === tdElement[6].textContent) {
     if (tdElement[2].textContent === 'X') {
       alert("Player1 Wins!");
     } else {
       alert("Player2 Wins!");
     }
+    resetGame();
   }
-
 }
 
 function resetGame(){
