@@ -23,7 +23,7 @@ main {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 100fr;
-  grid-template-areas: "t c"
+  grid-template-areas: "t i"
 }
 
 aside {
@@ -31,15 +31,21 @@ aside {
 }
 
 footer {
-  grid-area: f; 
+  grid-area: f;
 }
 
 .table {
   background: blue;
+  grid-area: t;
+  padding-top: 50%;
+  padding-left: 150px;
 }
 
 .info {
   background: yellow;
+  grid-area: i;
+  padding-top: 50%;
+  padding-left: 150px;
 }
 
 table, td {
@@ -49,7 +55,7 @@ table, td {
 }
 
 table {
-  width: 10%;
+  width: 50%;
   table-layout: fixed;
 }
 
