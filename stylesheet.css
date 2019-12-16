@@ -22,7 +22,7 @@ header {
 main {
   grid-area: m;
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: 100fr;
   grid-template-areas: "t i"
 }
@@ -43,14 +43,14 @@ footer {
 .table {
   grid-area: t;
   padding-top: 300px;
-  padding-left: 300px;
+  padding-left: 600px;
   background-color: #FFE4C4;
 }
 
 .info {
   grid-area: i;
   padding-top: 300px;
-  padding-left: 400px;
+  padding-left: 90px;
   font-size: 25px;
   background-color: #DEB887;
 }
@@ -72,7 +72,7 @@ table, td {
 }
 
 table {
-  width: 50%;
+  width: 20%;
   table-layout: fixed;
 }
 
