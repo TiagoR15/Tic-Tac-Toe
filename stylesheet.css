@@ -35,14 +35,12 @@ footer {
 }
 
 .table {
-  background: blue;
   grid-area: t;
   padding-top: 50%;
   padding-left: 150px;
 }
 
 .info {
-  background: yellow;
   grid-area: i;
   padding-top: 50%;
   padding-left: 150px;
