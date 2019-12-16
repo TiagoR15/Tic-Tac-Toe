@@ -289,6 +289,6 @@ function evaluateGame() {
 function resetGame() {
   for (var i = 0; i < tdElement.length; i++) {
     tdElement[i].textContent = i;
-    tdElement[i].style.backgroundColor = "#FFFFFF";
+    tdElement[i].style.backgroundColor = "#DEB887";
   }
 }

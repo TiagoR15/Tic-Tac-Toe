@@ -78,6 +78,7 @@ table {
 
 td {
   height: 10px;
+  cursor: pointer;
 }
 
 button {
