@@ -6,6 +6,7 @@ table, td {
 
 table {
   width: 10%;
+  table-layout: fixed;
 }
 
 td {
