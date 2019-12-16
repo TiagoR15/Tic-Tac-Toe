@@ -15,22 +15,18 @@ html, body {
 }
 
 header {
-  background: yellow;
   grid-area: h;
 }
 
 main {
-  background: blue;
   grid-area: m;
 }
 
 aside {
-  background: green;
   grid-area: a;
 }
 
 footer {
-  background: red;
   grid-area: f; 
 }
 
