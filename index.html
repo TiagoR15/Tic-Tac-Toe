@@ -11,27 +11,31 @@
   <div class="container">
     <header>Galo!</header>
     <main>
-      <table>
-        <tr>
-          <td onclick="move(0)">0</td>
-          <td onclick="move(1)">1</th>
-          <td onclick="move(2)">2</th>
-        </tr>
-        <tr>
-          <td onclick="move(3)">3</td>
-          <td onclick="move(4)">4</td>
-          <td onclick="move(5)">5</td>
-        </tr>
-        <tr>
-          <td onclick="move(6)">6</td>
-          <td onclick="move(7)">7</td>
-          <td onclick="move(8)">8</td>
-        </tr>
-      </table>
+      <div class="table">
+        <table>
+          <tr>
+            <td onclick="move(0)">0</td>
+            <td onclick="move(1)">1</th>
+            <td onclick="move(2)">2</th>
+          </tr>
+          <tr>
+            <td onclick="move(3)">3</td>
+            <td onclick="move(4)">4</td>
+            <td onclick="move(5)">5</td>
+          </tr>
+          <tr>
+            <td onclick="move(6)">6</td>
+            <td onclick="move(7)">7</td>
+            <td onclick="move(8)">8</td>
+          </tr>
+        </table>
+      </div>
+      <div class="info">
+        <p id="currentPlayer">Current Player: Player1</p>
+      </div>
     </main>
     <aside>
       <div id="players">
-        <p id="currentPlayer">Current Player: Player1</p>
         <button id="player1" onclick="resetGame()" style="vertical-align:middle">
           <span>Reset Game</span></button>
       </div>

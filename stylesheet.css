@@ -20,6 +20,10 @@ header {
 
 main {
   grid-area: m;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 100fr;
+  grid-template-areas: "t c"
 }
 
 aside {
@@ -28,6 +32,14 @@ aside {
 
 footer {
   grid-area: f; 
+}
+
+.table {
+  background: blue;
+}
+
+.info {
+  background: yellow;
 }
 
 table, td {
