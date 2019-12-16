@@ -16,6 +16,7 @@ html, body {
 
 header {
   grid-area: h;
+  background-color: #A52A2A;
 }
 
 main {
@@ -28,6 +29,7 @@ main {
 
 aside {
   grid-area: a;
+  background-color: #D2691E;
 }
 
 footer {
@@ -42,6 +44,7 @@ footer {
   grid-area: t;
   padding-top: 300px;
   padding-left: 300px;
+  background-color: #FFE4C4;
 }
 
 .info {
@@ -49,6 +52,7 @@ footer {
   padding-top: 300px;
   padding-left: 400px;
   font-size: 25px;
+  background-color: #DEB887;
 }
 
 .button {
@@ -79,7 +83,7 @@ td {
 button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #8B0000;
   border: none;
   color: #FFFFFF;
   text-align: center;
