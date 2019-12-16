@@ -34,6 +34,10 @@ footer {
   grid-area: f;
 }
 
+.title {
+  padding-left: 50%;
+  font-size: 50px;
+}
 .table {
   grid-area: t;
   padding-top: 300px;
@@ -44,11 +48,17 @@ footer {
   grid-area: i;
   padding-top: 300px;
   padding-left: 400px;
+  font-size: 25px;
 }
 
-.players {
-  padding-top: 50%;
-  padding-left: 50%;
+.button {
+  padding-top: 40%;
+  padding-left: 40%;
+}
+
+.playerWins {
+  padding-left: 40%;
+  font-size: 25px;
 }
 
 table, td {
