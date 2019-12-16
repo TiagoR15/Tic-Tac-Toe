@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
-        <title class="title">This is my test page!</title>
-    </head>
-    <body>
-      <b>Galo!</b>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+  <title class="title">This is my test page!</title>
+</head>
+
+<body>
+  <div class="conatiner">
+    <header>Galo!</header>
+    <main>
       <table>
         <tr>
           <td onclick="move(0)">0</td>
@@ -24,7 +28,8 @@
           <td onclick="move(8)">8</td>
         </tr>
       </table>
-
+    </main>
+    <aside>
       <div id="players">
         <p id="currentPlayer">Current Player: Player1</p>
         <button id="player1" onclick="resetGame()" style="vertical-align:middle">
@@ -35,8 +40,12 @@
         <p name="player1Wins">Player1 Wins: 0</p>
         <p name="player2Wins">Player2 Wins: 0</p>
       </div>
+    </aside>
+    <footer>Footer</footer>
+  </div>
 
-      <script src="game.js"></script>
 
-    </body>
+  <script src="game.js"></script>
+</body>
+
 </html>
