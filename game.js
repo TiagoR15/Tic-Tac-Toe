@@ -12,7 +12,7 @@
  */
 var player = 1;
 var playerIcon = 'X';
-var backgroundColor = "#6495ED";
+var backgroundColor = "#006400";
 var player1 = 'Current Player: Player1';
 var player2 = 'Current Player: Player2';
 var player1Wins = 0;
@@ -59,7 +59,7 @@ function switchPlayer() {
   } else {
     player = 1;
     playerIcon = 'X';
-    backgroundColor = "#6495ED";
+    backgroundColor = "#006400";
     playerElement.textContent = player1;
   }
 }
@@ -289,6 +289,6 @@ function evaluateGame() {
 function resetGame() {
   for (var i = 0; i < tdElement.length; i++) {
     tdElement[i].textContent = i;
-    tdElement[i].style.backgroundColor = "#DEB887";
+    tdElement[i].style.backgroundColor = "#1C7293";
   }
 }
